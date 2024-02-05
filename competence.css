@@ -1,5 +1,5 @@
+/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
 
 * {
     margin: 0;
@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -41,70 +40,18 @@ section {
     margin: auto;
 }
 
-/* navbar styling */
-.navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-
-}
-
-.navbar.sticky {
-    padding: 15px 0;
-    background: magenta;
-}
-
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.navbar .logo a span {
-    color: magenta;
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky .logo a span {
-    color: #fff;
-}
-
-.navbar .menu li {
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar .menu li a {
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 30s ease;
-}
-
-.navbar .menu li a:hover {
-    color: magenta;
-}
-
-.navbar.sticky .menu li a:hover {
-    color: #fff;
-}
-
-.Compétence,
+.formation,
 footer {
     font-family: 'Poppins', sans-serif;
 }
 
+.formation .formation-content,
+.formation .formation-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
 section .title {
     position: relative;
@@ -205,13 +152,226 @@ section .title::after {
     display: none;
 }
 
-.Compétence .title::before {
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: magenta;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+
+/* home section styling */
+.Acceuil {
+    display: flex;
+    background: url("imageportfolio1.jfif") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Acceuil .max-width {
+    width: 100%;
+    display: flex;
+}
+
+.Acceuil .max-width .row {
+    margin-right: 0;
+}
+
+.Acceuil .Acceuil-content .text-1 {
+    font-size: 27px;
+}
+
+.Acceuil .Acceuil-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.Acceuil .Acceuil-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.Acceuil .Acceuil-content .text-3 span {
+    color: magenta;
+    font-weight: 500;
+}
+
+.Acceuil .Acceuil-content .text-4 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.Acceuil .Acceuil-content a {
+    display: inline-block;
+    background: magenta;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid magenta;
+    transition: all 0.3s ease;
+}
+
+.Acceuil .Acceuil-content a:hover {
+    color: magenta;
+    background: none;
+}
+
+/* about section styling */
+
+.formation .title::before {
     background: #fff;
 }
 
-.Compétence .title::after {
+.formation .title::after {
     background: #111;
     content: "";
+}
+
+
+.formation {
+    color: #fff;
+    background: #111;
+}
+
+.formation .title::after {
+    content: "";
+    background: #fff;
+}
+
+.formation .formation-content .left {
+    width: 45%;
+}
+
+.formation .formation-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    color: magenta;
+    font-size: magenta;
+}
+
+.formation .formation-content .right {
+    width: 55%;
+}
+
+.formation .formation-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.formation .formation-content .right .text span {
+    color: magenta;
+}
+
+.formation .formation-content .right p {
+    text-align: justify;
+}
+
+.formation .formation-content .right a {
+    display: inline-block;
+    background: magenta;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid magenta;
+    transition: all 0.3s ease;
+}
+
+.formation-content .right a:hover {
+    color: magenta;
+    background: none;
+}
+
+/* services section styling */
+.veille,
+.stage {
+    color: #fff;
+    background: #111;
+}
+
+.veille .title::before,
+.stage .title::before {
+    background: #fff;
+}
+
+.veille .title::after,
+.stage .title::after {
+    background: #111;
+    content: "";
+}
+
+.veille .veille-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.veille .veille-content .card:hover {
+    background: magenta;
+}
+
+.veille .veille-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.veille .veille-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.veille .veille-content .card i {
+    font-size: 50px;
+    color: magenta;
+    transition: color 0.3s ease;
+}
+
+.veille .veille-content .card:hover i {
+    color: #fff;
+}
+
+.veille .veille-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* skills section styling */
@@ -313,6 +473,195 @@ section .title::after {
     width: 20%;
 }
 
+/* teams section styling */
+.stage .title::after {
+    content: "";
+}
+
+.stage .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.stage .carousel .card:hover {
+    background: magenta;
+}
+
+.stage .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.stage .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.stage .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.stage .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid magenta;
+    transition: all 0.3s ease;
+}
+
+.stage .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid magenta !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: magenta !important;
+}
+
+/* contact section styling */
+.contact .title::after {
+    content: "";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: magenta;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #333;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+.right form .button-area button {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: magenta;
+    border: 2px solid magenta;
+    transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover {
+    color: magenta;
+    background: none;
+}
+
 /* footer section styling */
 footer {
     background: #111;
@@ -330,19 +679,155 @@ footer span a:hover {
     text-decoration: underline;
 }
 
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .formation .formation-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
 @media (max-width: 947px) {
-    .Compétence .Compétence-content .column {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 10s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .Acceuil .Acceuil-content .text-2 {
+        font-size: 70px;
+    }
+
+    .Acceuil .Acceuil-content .text-3 {
+        font-size: 35px;
+    }
+
+    .Acceuil .Acceuil-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+
+    .formation .formation-content .column {
+        width: 100%;
+    }
+
+    .formation .formation-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .formation .formation-content .right {
+        flex: 100%;
+    }
+
+    .veille .veille-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .Compétence .Compétence-content .column,
+    .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
 }
 
-@media (max-width: 500px) {
-    .Compétence .Compétence-content .left .text {
-        font-size: 19px;
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .Acceuil .Acceuil-content .text-2 {
+        font-size: 60px;
+    }
+
+    .Acceuil .Acceuil-content .text-3 {
+        font-size: 32px;
+    }
+
+    .Acceuil .Acceuil-content a {
+        font-size: 20px;
+    }
+
+    .veille .veille-content .card {
+        width: 100%;
     }
 }
 
-img {
-    align-content: center;
+@media (max-width: 500px) {
+    .Acceuil .Acceuil-content .text-2 {
+        font-size: 50px;
+    }
+
+    .Acceuil .Acceuil-content .text-3 {
+        font-size: 27px;
+    }
+
+    .formation .formation-content .right .text,
+    .Compétence .Compétence-content .left .text {
+        font-size: 19px;
+    }
+
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+
+    .right form .error-box {
+        width: 150px;
+    }
+
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
 }

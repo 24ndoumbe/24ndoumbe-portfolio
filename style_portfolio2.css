@@ -693,6 +693,17 @@ section .title::after {
     background: none;
 }
 
+.small-section {
+    max-width: 80%; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* Pour centrer la section */
+    padding: 20px; /* Ajoutez un espacement intérieur si nécessaire */
+}
+
+.center {
+    text-align: center;
+}
+
+
 /* footer section styling */
 footer {
     background: #111;

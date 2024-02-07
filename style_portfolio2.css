@@ -249,6 +249,31 @@ section .title::after {
 
 /* about section styling */
 
+.column {
+    width: 33.33%;
+    float: left;
+}
+
+.left {
+    text-align: justify;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Ajustez cette valeur si nécessaire */
+}
+
+
+.right {
+    text-align: justify;
+}
+
 .formation .title::before {
     background: #fff;
 }
@@ -270,25 +295,31 @@ section .title::after {
 }
 
 .formation .formation-content .left {
-    width: 45%;
+    width: 30%;
 }
 
-.formation .formation-content .left img {
-    height: 400px;
-    width: 400px;
+/*.formation .formation-content  image {
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     border-radius: 6px;
     color: magenta;
     font-size: magenta;
-}
+}*/
 
 .formation .formation-content .right {
-    width: 55%;
+    width: 30%;
 }
 
 .formation .formation-content .right .text {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.formation .formation-content .left .text {
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 

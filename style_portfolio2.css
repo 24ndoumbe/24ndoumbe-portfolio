@@ -70,7 +70,7 @@ section .title::before {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: white;
     transform: translateX(-50%);
 }
 
@@ -263,10 +263,20 @@ section .title::after {
     justify-content: center;
     align-items: center;
 }
-.middle img {
+/*.middle img {
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Ajustez cette valeur si nécessaire */
+    max-height: 300px; 
+}*/
+
+ul.center {
+    color: white; /* Couleur du texte */
+    list-style-type: disc; /* Style des puces */
+}
+
+
+.centered {
+    text-align: center;
 }
 
 
@@ -285,8 +295,8 @@ section .title::after {
 
 
 .formation {
-    color: #fff;
-    background: #111;
+    color: black;
+    background: white;
 }
 
 .formation .title::after {
@@ -306,6 +316,34 @@ section .title::after {
     color: magenta;
     font-size: magenta;
 }*/
+
+.image-container {
+    background-color: pink; /* Couleur de fond de votre choix */
+    padding: 20px; /* Espacement autour de l'image */
+    width: 600px; /* Largeur de votre choix */
+    height: 300px; /* Hauteur de votre choix */
+}
+
+.image-container img {
+    width: 100%; /* Image prend 100% de la largeur du conteneur */
+    height: 100%; /* Image prend 100% de la hauteur du conteneur */
+}
+
+.box {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: pink;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+.box ul li {
+    color: black;
+}
+
 
 .formation .formation-content .right {
     width: 30%;
@@ -334,7 +372,7 @@ section .title::after {
 .formation .formation-content .right a {
     display: inline-block;
     background: magenta;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -706,7 +744,7 @@ section .title::after {
 
 /* footer section styling */
 footer {
-    background: #111;
+    background: magenta;
     padding: 15px 23px;
     color: #fff;
     text-align: center;

@@ -175,6 +175,27 @@ section .title::after {
     transition: color 30s ease;
 }
 
+.stage-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.stage-text {
+    flex: 1; /* Prend autant d'espace que possible */
+    margin-right: 20px; /* Espacement entre le texte et l'image */
+}
+
+.stage-image {
+    flex: 1; /* Prend autant d'espace que possible */
+}
+
+.stage-image img {
+    max-width: 100%; /* Image s'ajuste à la largeur du conteneur */
+    height: auto; /* Garantit que l'aspect ratio de l'image est conservé */
+}
+
 .navbar .menu li a:hover {
     color: magenta;
 }
